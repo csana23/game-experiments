@@ -19,11 +19,22 @@ print("First computer step:", first_computer_step)
 game_space[first_computer_step] = computer_character
 print(game_space)
 
-# game loop
-while np.isnan(game_space):
-    # get player step
-    
+i = 0
 
+# game loop
+while np.isnan(game_space).any():
+    # get player step TODO
+    print("Iteration:", i)
+    nan_elements_idx = np.argwhere(np.isnan(game_space)) 
+    print(nan_elements_idx)
+
+    computer_step = random.randint(0, len(nan_elements_idx)-1)
+    print(computer_step)
+    
+    game_space[tuple(nan_elements_idx[computer_step])] = computer_character
+    print(game_space)
+
+    i = i+1
 
 
 
