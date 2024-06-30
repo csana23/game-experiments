@@ -25,10 +25,11 @@ i = 0
 while np.isnan(game_space).any():
     try:
         # get player step TODO
-        player_input = tuple(input("Enter choice (eg. 12):\n"))
+        while True:
+            player_input = input("Enter choice (eg. 12):\n")
 
-        # parse player input
-        player_step = ""
+            if 
+
 
         print("Iteration:", i)
         nan_elements_idx = np.argwhere(np.isnan(game_space)) 
