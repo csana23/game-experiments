@@ -2,12 +2,13 @@
 
 # Import and initialize the pygame library
 import pygame
+
 pygame.init()
 
-# Set up the drawing window
+# Setup the window we'll use for drawing
 screen = pygame.display.set_mode([500, 500])
 
-# Run until the user asks to quit
+# Run until the user asks us to quit
 running = True
 while running:
 
@@ -17,13 +18,13 @@ while running:
             running = False
 
     # Fill the background with white
-    screen.fill((255, 0, 255))
+    screen.fill((255, 255, 255))
 
-    # Draw a solid blue circle in the center
+    # Draw a solid circle in the center
     pygame.draw.circle(screen, (0, 0, 255), (250, 250), 75)
 
     # Flip the display
-    # pygame.display.flip()
+    pygame.display.flip()
 
-# Done! Time to quit.
+# We're done, so we can quit now.
 pygame.quit()
