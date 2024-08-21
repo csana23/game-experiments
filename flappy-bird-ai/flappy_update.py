@@ -1,4 +1,15 @@
-import pygame, sys, random 
+import pygame, sys, random
+import gymnasium as gym
+from gymnasium import spaces
+import cv2
+
+class FlappyEnv(gym.Env):
+
+	def __init__(self):
+		pygame.init()
+		super(FlappyEnv, self).__init__()
+
+		
 
 def draw_floor():
 	screen.blit(floor_surface,(floor_x_pos,900))
