@@ -9,6 +9,21 @@ class FlappyEnv(gym.Env):
 		pygame.init()
 		super(FlappyEnv, self).__init__()
 
+	def reset(self):
+		pass
+
+	def step(self, action):
+		pass
+
+	def render(self):
+		pass
+
+	def close(self):
+		pass
+
+	def preprocessing(self, image):
+		pass
+
 		
 
 def draw_floor():
